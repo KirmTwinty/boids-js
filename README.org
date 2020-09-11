@@ -1,0 +1,4 @@
+* Boids-js
+A simple implementation in =HTML5= =canvas= of the boids algorithm from Craig W. Reynold's (view its homepage [[http://www.red3d.com/cwr/][here]]).
+
+

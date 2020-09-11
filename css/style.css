@@ -1,0 +1,68 @@
+* { margin:0; padding:0; } /* to remove the top and left whitespace */
+
+html, body { color:#fff; font-family: Fira Sans, Arial, serif; width:100%; height:100%; } /* just to be sure these are full screen*/
+
+#container{ 
+    width: 100%; 
+    height: 100%;
+    display:flex;
+}
+#menu{
+    width:15%;
+    height:100%;
+    background-color: #191922;
+    border-right: solid 2px #32323d;
+    padding: 10px;
+}
+.menu-item{
+    width: 100%;
+    text-align: center;
+}
+.menu-input{
+    text-align: left;
+    margin-top: 10px;
+}
+.menu-input:before{
+    content:attr(data);
+}
+canvas { 
+    width: 85%;
+    height: 100%;
+    background-color: #FFFFFF;
+    cursor: none;
+ } /* To remove the scrollbars */
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 12px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  margin-top:10px;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: #ca2a36;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  background: #ca2a36;
+  cursor: pointer;
+}
+
+.slider::after{
+    content:attr(value);
+}
